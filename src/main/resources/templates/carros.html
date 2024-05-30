@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>View Carros</title>
+</head>
+<body>
+<h1>Tabela de Preços</h1>
+<hr>
+<table>
+    <thead>
+    <tr>
+        <th>Marca</th>
+        <th>Modelo</th>
+        <th>Preço</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="carros:${carros}">
+        <td th:text="  ${  carros.marca  }  ">Marca</td>
+        <td th:text="  ${  carros.modelo  }  ">Modelo</td>
+        <td th:text="  ${  carros.preco  }  ">Preço</td>
+    </tr>
+    </tbody>
+    </table>
+</body>
+</html>
